@@ -7,7 +7,7 @@
 
 body {
     font-size: 100%;
-    background: rgba(36, 44, 44, 0.959);
+    background: rgba(255, 255, 255, 0.959);
 }
 
 .cabecalho {
@@ -16,11 +16,11 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 15px;
-    background-color: rgba(255, 255, 0, 0.527);
+    background-color: #000000;
 }
 .cabecalho-logo {
     font-family: 'Sarala', sans-serif;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
     font-size: 30px;
 }
