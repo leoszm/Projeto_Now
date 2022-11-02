@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="tete.css">
+    <script src="../codigo/cadastro.js"></script>
+    <title>Now</title> 
+</head>
+<body>
+
+      
+    <!-- <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Perfil</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contato</a>
+        </div>
+      </nav> -->
+     
+    
+    <div class="Header">
+    <h1>Now</h1>
+    <div class="navbar">
+        <nav class="menu">
+        <ul>
+            <li><a href="/TelaPrincipal/index.html"> Login |</a></li>
+            <li><a href=""> Seja um colaborador |</a></li>  
+            <li><a href="">Quem somos </a></li>
+        </ul>
+    </nav>
+    </div>
+    </div>
+
+
+    <div class="container">
+      
+      <div class="cardCadastro">
+       
+        <div class="containerDados">
+          <div class="texto">
+            <p>Preencha os campos:</p>
+          </div>
+        
+        <form>
+          <label for="nomeCompleto">Nome completo:</label><br>
+          <input type="text" id="nomeCompleto" placeholder="Digite seu nome completo"><br>
+          <label for="emailCadastro">Insira seu e-mail:</label><br>
+          <input type="email" id="emailCadastro" placeholder="Digite aqui seu e-mail"><br>
+          <label for="cadastroSenha">Digite sua senha:</label><br>
+          <input type="password" id="cadastroSenha" placeholder="Digite aqui sua senha"><br>
+          <label for="">Repita sua senha:</label><br>
+          <input type="password" id="repitaSenha" placeholder="Repita aqui sua senha"><br>
+      
+      </form>
+      </div>
+      <div class="containerDados2">
+        <form>
+        <label for="nomeUsuario">Nome de Usuário:</label><br>
+        <input type="text" id="nomeUsuario" placeholder="Digite aqui seu usuário"><br>
+    
+        <label for="dataNascimento">Insira sua data de nascimento:</label><br>
+        <input type="date" id="dataNascimento"><br>
+        <label for="">Insira seu CPF:</label><br>
+        <input type="nu" id="cpf" placeholder="Digite aqui seu CPF"><br>
+        <!-- <script type="text/javascript">
+          $(document).ready(function(){
+            $("#cpf").mask("999.999.999-99");
+          });
+        </script> -->
+        <button onclick="btnCadastrar()">Cadastrar</button>
+      </form>
+      </div>
+      <div class="grep"></div>
+      <div class="cadastroFora">
+        <img src="../imagens/googleIcon.png" alt="google">
+        <img src="../imagens/linkedinIcon.png" alt="linkedin">
+        <img src="../imagens/facebookIcon.png" alt="facebook">
+      </div>
+      </div>
+    </div>
+</body>
+   

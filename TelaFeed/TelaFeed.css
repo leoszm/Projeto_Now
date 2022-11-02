@@ -1,0 +1,31 @@
+body {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    
+    background: #292929;
+    }
+
+    .header {
+        position: absolute;
+        width: 1920px;
+        height: 101px;
+        background: #C0C231;
+    }
+
+    nav.menu{
+        display: block;
+        position: relative;
+        align-content: center;
+    }
+
+    nav.menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+    }
+
+    nav.menu li {
+        display: inline-flex;
+        
+    }
