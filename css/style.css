@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgba(255, 255, 255, 0.959);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #000000;
+}
+.cabecalho-logo {
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 75px;
+    margin-left: 550px;
+}
+
+.cabecalho-menu-item {
+    
+}

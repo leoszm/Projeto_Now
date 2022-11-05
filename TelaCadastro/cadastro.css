@@ -1,0 +1,164 @@
+body {
+    
+    background-image: url(../imagens/fundoTelaInicial.png) ;
+} 
+
+#imagemFundo {
+    background-image: url(../imagens/fundoTelaInicial.png);
+    width: auto;
+    height: auto;
+
+}
+
+.Header h1 {
+    color: white;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.Header {
+    position: relative;
+    margin: 0px auto 0px auto;
+    height: 60px;
+    width: auto;
+    background: #000000;
+    border-spacing: 0;
+}
+.navbar {
+    right: 5px;
+    margin-top: -40px;
+    position: absolute;
+    width: auto;
+    height: 40px;
+    
+    
+} 
+
+
+nav li{
+    
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -80px;
+    font-size: 24px;
+    
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.texto {
+    z-index: 1;
+    font-size: 22px;
+    position: absolute;
+    margin-top: -20px;
+    font-weight: bolder;
+    width: auto;
+    height: auto;
+    
+}
+
+.cardCadastro{
+    
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.containerDados {
+    position: relative;
+    display: flex;
+    justify-items: left;
+    
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.containerDados2 {
+    position: relative;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+}
+
+.containerDados form label {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px ;
+    width: auto;
+}
+
+
+.containerDados2 form label {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px ;
+    width: auto;
+}
+
+.containerDados form input{
+    margin-top: 8px;
+    outline: 3px solid yellow;
+    border: 0;
+    padding: 8px;
+    font-size: 15pt;
+    border-radius: 10px;
+    width: auto;
+}
+
+.containerDados2 form input {
+    margin-top: 8px;
+    outline: 3px solid yellow;
+    border: 0;
+    padding: 8px;
+    font-size: 15pt;
+    border-radius: 10px;
+    width: auto;
+}
+
+form button {
+    font-size: 20pt;
+    font-weight: bolder;
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    outline: 3px solid yellow;
+    margin-top: 40px;
+}
+
+.grep {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+    width: 3px;
+    height: 400px;
+}
+
+.cadastroFora {
+    margin: auto;
+    display: inline-flex;
+}
+
+.cadastroFora img {
+    margin: 10px;
+    width: 80px;
+    height: 70px;
+}
+
