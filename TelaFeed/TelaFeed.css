@@ -7,10 +7,10 @@
 
 body {
     position: absolute;
-    width: 2115px;
-    height: 1080px;
+    width:  100%;
+    height: 100%;
     
-    background: #0000;
+    background-color: #4F4F4F;
     }
 
     .cabecalho {
@@ -19,7 +19,7 @@ body {
         align-items: center;
         justify-content: space-around;
         padding: 15px;
-        background-color: black;;
+        background-color: black;
     }
     .cabecalho-logo {
         font-family: 'Sarala', sans-serif;
@@ -37,7 +37,7 @@ body {
         .fixarRodape{
             position: absolute;
             bottom: 00;
-            color: black;
+            color: white;
             width: 100%;
             height: 50px;    
             text-align: center;
