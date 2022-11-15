@@ -1,34 +1,30 @@
 // MESSAGE INPUT
 const textarea = document.querySelector('.chatbox-message-input')
+const textarea1 = document.querySelector('#chatbox-message-input1')
 const chatboxForm = document.querySelector('.chatbox-message-form')
+const chatboxForm1 = document.querySelector('#chatbox-message-form1')
 
-// SUBMIT NO ENTER
+// ENTER SUBMIT
 textarea.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    document.getElementById("chatbox-message-submit").click();
+    document.querySelector("#chatbox-message-submit").click();
   }
 });
 
-textarea.addEventListener('input', function () {
-	let line = textarea.value.split('\n').length
-
-	if(textarea.rows < 6 || line < 6) {
-		textarea.rows = line
-	}
-
-	if(textarea.rows > 1) {
-		chatboxForm.style.alignItems = 'flex-end'
-	} else {
-		chatboxForm.style.alignItems = 'center'
-	}
-})
+textarea1.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.querySelector("#chatbox-message-submit1").click();
+  }
+});
 
 
 // CHATBOX MESSAGE
 const chatboxMessageWrapper = document.querySelector('.chatbox-message-content')
+const chatboxMessageWrapper1 = document.querySelector('#chatbox-message-content1')
 const chatboxNoMessage = document.querySelector('.chatbox-message-no-message')
-const chatboxWrapper = document.querySelector('.chatbox-message-wrapper')
+const chatboxNoMessage1 = document.querySelector('#chatbox-message-no-message1')
 
 chatboxForm.addEventListener('submit', function (e) {
 	e.preventDefault()
@@ -36,6 +32,15 @@ chatboxForm.addEventListener('submit', function (e) {
 	if(isValid(textarea.value)) {
 		writeMessage()
 		setTimeout(autoReply, 1000)
+	}
+})
+
+chatboxForm1.addEventListener('submit', function (e) {
+	e.preventDefault()
+
+	if(isValid1(textarea1.value)) {
+		writeMessage1()
+		setTimeout(autoReply1, 1000)
 	}
 })
 
@@ -64,6 +69,26 @@ function writeMessage() {
 	scrollBottom()
 }
 
+
+function writeMessage1() {
+	const today = new Date()
+	let message = `
+		<div class="chatbox-message-item sent">
+			<span class="chatbox-message-item-text">
+				${textarea1.value.trim().replace(/\n/g, '<br>\n')}
+			</span>
+			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
+		</div>
+	`
+	chatboxMessageWrapper1.insertAdjacentHTML('beforeend', message)
+	chatboxForm1.style.alignItems = 'center'
+	textarea1.rows = 1
+	textarea1.focus()
+	textarea1.value = ''
+	chatboxNoMessage1.style.display = 'none'
+	scrollBottom()
+}
+
 function autoReply() {
 	const today = new Date()
 	let message = `
@@ -78,8 +103,26 @@ function autoReply() {
 	scrollBottom()
 }
 
+function autoReply1() {
+	const today = new Date()
+	let message = `
+		<div class="chatbox-message-item received">
+			<span class="chatbox-message-item-text">
+				Ao acessar a Now, você concorda com os nossos termos de uso.
+			</span>
+			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
+		</div>
+	`
+	chatboxMessageWrapper1.insertAdjacentHTML('beforeend', message)
+	scrollBottom1()
+}
+
 function scrollBottom() {
 	chatboxMessageWrapper.scrollTo(0, chatboxMessageWrapper.scrollHeight)
+}
+
+function scrollBottom1() {
+	chatboxMessageWrapper1.scrollTo(0, chatboxMessageWrapper1.scrollHeight)
 }
 
 function isValid(value) {
@@ -89,28 +132,45 @@ function isValid(value) {
 	return text.length > 0
 }
 
-const thisChat = document.getElementById('block')
+function isValid1(value) {
+	let text = value.replace(/\n/g, '')
+	text = text.replace(/\s/g, '')
+
+	return text.length > 0
+}
+
+
+
+const btnBlock1 = document.querySelector('.blockBtn')
+const newChat = document.querySelector('#otherone')
+
+btnBlock1.addEventListener('click', () => {
+	newChat.style.zIndex='1'
+})
+
+
+const thisChat = document.querySelector('#block')	
+
+thisChat.addEventListener('click', () => {
+	newChat.style.zIndex='-1'
+})
 
 setTimeout(() => {
-	const blockBtn = 	`
-	<div class="blockBtn">
-		<div class="imgBox">
-			<img
-				src="../foto-usuarios/perfil5.png"
-				class="cover"
-				alt=""
-			/>
-		</div>
-		<div class="details">
-			<div class="listHead">
-				<h4>Redtek</h4>
-				<p class="time">10:56</p>
-			</div>
-			<div class="message_p">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque nobis inventore non corrupti ducimus!</p>
-				<b></b>
-			</div>
-		</div>
-	</div>`
-	thisChat.insertAdjacentHTML('afterend', blockBtn)
-}, 9000)
+	btnBlock1.style.display = 'flex'
+}, 8000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

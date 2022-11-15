@@ -3,39 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Messages" />
-    <title>Message - Now</title>
+    <meta name="description" content="Feed de Noticias"/>
+    <title>Feed de Noticias - Now</title>
     <link
       href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../TelaFeed/TelaFeed.css">
     <link rel="stylesheet" href="./message.css" />
     <script
       src="https://kit.fontawesome.com/f7abf79c74.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header class="cabecalho">
-      <a class="cabecalho-logo"> <u><strong>Now</strong></u> </a>
-      
+      <section>
+          <figure class="gif">
+              <a href="../TelaFeed/index.html">
+                <img src="../images/NOW-chats.gif">
+              </a>
+          </figure>
+      </section>
       <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-item" href="./content.html">
-          <img src="../images/botao-home-para-interface.png" alt="Home"/>
-        </a>
-        <a class="cabecalho-menu-item" href="./group.html">
-          <img src="../images/pasta.png" alt="Groups"/>
-        </a>
-        <a class="cabecalho-menu-item" href="./message.html">
-          <img src="../images/chat.png" alt="Messages"/>
-        </a>
-        <a class="cabecalho-menu-item" href="./notification.html">
-          <img src="../images/bell.png" alt="Notifications"/>
-        </a>
+        <a class="cabecalho-menu-item" href="../TelaFeed/index.html"><img src="../images/home.png" alt="Home"> </a>
+        <a class="cabecalho-menu-item" href="../TelaFeed/jobs.html"><img src="../images/jobs.png" alt="Groups"></a>
+        <a class="cabecalho-menu-item" href="../TelaFeed/messages.html"><img src="../images/mensagens.png" alt="Messages"></a>
+        <a class="cabecalho-menu-item" href="../TelaFeed/notification.html"><img src="../images/notification1.png" alt="Notifications"></a>
+        <a class="Sair" href="../TelaPrincipal/index.html" ><img src="../images/sair.gif" alt="sair"></a>
       </nav>
-
     </header>
+
     <main>
       <div class="chatbox-wrapper">
         <div class="leftSide">
@@ -78,7 +77,25 @@
               </div>
             </div>
 
-            
+            <div class="blockBtn">
+              <div class="imgBox">
+                <img
+                  src="../foto-usuarios/perfil10.png"
+                  class="cover"
+                  alt=""
+                />
+              </div>
+              <div class="details">
+                <div class="listHead">
+                  <h4>Mercado Livre</h4>
+                  <p class="time">10:56</p>
+                </div>
+                <div class="message_p">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque nobis inventore non corrupti ducimus!</p>
+                  <b></b>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -131,10 +148,74 @@
               </form>
             </div>
           </div>
-        </div>
-      </div>
 
-      <script src="./message.js"></script>
+          <div class="chatbox-message-wrapper" id="otherone">
+            <div class="chatbox-message-header">
+              <div class="chatbox-message-profile">
+                <img
+                  src="../foto-usuarios/perfil10.png"
+                  alt=""
+                  class="chatbox-message-image"
+                />
+                <div>
+                  <h4 class="chatbox-message-name">Mercado Livre</h4>
+                  <p class="chatbox-message-status">online</p>
+                </div>
+              </div>
+              <div class="chatbox-message-dropdown">
+                <i
+                  class="bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle"
+                ></i>
+                <ul class="chatbox-message-dropdown-menu">
+                  <li>
+                    <a href="#">Search</a>
+                  </li>
+                  <li>
+                    <a href="#">Report</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="chatbox-message-content" id="chatbox-message-content1">
+              <div class="chatbox-message-item received">
+                <span class="chatbox-message-item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, debitis magnam, at ullam delectus consequatur ea.
+                </span>
+                <span class="chatbox-message-item-time"></span>
+              </div>
+              <h4 class="chatbox-message-no-message" id="chatbox-message-no-message1"></h4>
+              <div class="chatbox-message-bottom">
+                <form action="#" class="chatbox-message-form" id="chatbox-message-form1">
+                  <textarea
+                    rows="1"
+                    placeholder="Type message..."
+                    class="chatbox-message-input"
+                    id="chatbox-message-input1"
+                  ></textarea>
+                  <button type="submit" class="chatbox-message-submit" id="chatbox-message-submit1">
+                    <i class="bx bx-send"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          </div class="container body-content">
+            <footer class="fixarRodape">
+              <p>&copy; Now - todos direitos reservados</p>
+            </footer>
+          </div>
+        </div>
+      </div>  
     </main>
+    <script src="./message.js"></script>
   </body>
 </html>
+         
+          
+        
+      
+    
+
+            
+
