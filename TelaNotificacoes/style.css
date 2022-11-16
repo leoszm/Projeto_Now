@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    background-color: #292929;
+    color: #5B5B65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background: black;
+    width: 100%;
+}
+.cabecalho-logo {
+    font-family: 'Sarala', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 75px;
+    margin-left: 550px;
+    }
+h2 {
+    color: white
+}
+.notifications {
+    margin-top: 30px;
+    background-color:black;
+    width: 85%;
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.title-now {
+    margin-top: -70px;
+    background-color:black;
+    width: 280%;
+    max-height: 950px;
+    padding: 8px;
+    gap: 20px;
+}
+
+.navbar {
+    right: 5px;
+    margin-top: -20px;
+    position: absolute;
+    width: auto;
+    height: 40px;
+    display: flex;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notification-number {
+    font-size: 16px;
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+    padding: 2px 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.notification-container {
+    margin-top: 20px;
+}
+
+.notification-card {
+    display: flex;
+    background-color: #f6fafd;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.notification-avatar {
+    width: 50px;
+    height: 50px;
+
+}
+
+.notification-text {
+    margin-bottom: 5px;
+}
+
+.notification-name {
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.notification-time {
+    color: hsl(219, 14%, 63%);
+}
+
+.todas-mensagens {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.mensagem {
+    color: #ffffff;
+    text-align: right;
+    background-color: black;
+    padding: 8px;
+    text-decoration: none;
+}

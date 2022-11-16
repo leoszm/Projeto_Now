@@ -1,10 +1,10 @@
 body {
     
-    background-image: url(../imagens/fundoTelaInicial.png) ;
+    background-image: url(../imagensCadastroLogin/fundoTelaInicial.png) ;
 } 
 
 #imagemFundo {
-    background-image: url(../imagens/fundoTelaInicial.png);
+    background-image: url(../imagensCadastroLogin/fundoTelaInicial.png);
     width: auto;
     height: auto;
 
@@ -87,6 +87,11 @@ nav a {
     margin-left: 20px;
     margin-right: 40px;
 }
+
+.containerDados h2{
+    display: flex;
+    position: relative;
+}    
 
 .containerDados2 {
     position: relative;
