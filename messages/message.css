@@ -169,8 +169,9 @@ select {
 
 .chatlist {
   position: relative;
-  height: 360px;
+  height: 510px;
   width: 400px;
+  z-index: 0;
   overflow: auto;
   background-color: var(--lista-chat);
 }
@@ -286,13 +287,15 @@ select {
 
 .chatbox-message-wrapper {
   overflow: hidden;
-  width: 966px;
+  width: 100%;
   position: relative;
 }
 
 #otherone {
   position: absolute;
   z-index: -1;
+  width: 100%;
+  height: 100%;
   top: 0;
 }
 
@@ -399,7 +402,7 @@ select {
   padding: 0.75rem 1.5rem;
   position: absolute;
   bottom: 8px;
-  width: 900px;
+  width: calc(100% - 50px);
 }
 .chatbox-message-form {
   display: flex;
@@ -435,3 +438,52 @@ select {
   text-align: center;
 }
 /* CHATBOX */
+@media screen and (min-height: 540px) {
+  .chatbox-message-content {
+    height: 329px;
+  }
+
+  .chatlist {
+    height: 280px;
+  }
+}
+
+@media screen and (min-height: 617px) {
+  .chatbox-message-content {
+    height: 410px;
+  }
+
+  .chatlist {
+    height: 360px;
+  }
+}
+
+@media screen and (min-height: 640px) {
+  .chatbox-message-content {
+    height: 430px;
+  }
+
+  .chatlist {
+    height: 380px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .chatbox-message-content {
+    height: 560px;
+  }
+
+  .chatlist {
+    height: 510px;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .chatbox-message-content {
+    height: 870px;
+  }
+
+  .chatlist {
+    height: 820px;
+  }
+}
